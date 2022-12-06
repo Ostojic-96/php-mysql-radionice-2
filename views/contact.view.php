@@ -8,8 +8,8 @@
     <?php require ('partials/navbar.view.php') ?>
 
     <section class="container p-4">
-        <h1>Kontakt</h1>
-        <hr>
+        <?php require ('partials/entry.view.php') ?>
+
         <p>Kontaktirajte nas</p>
     </section>
 </main>

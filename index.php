@@ -25,4 +25,6 @@ foreach ($movies as $movie) {
     }
 }
 
+$pageTitle = 'Početna stranica';
+
 require "views/index.view.php";

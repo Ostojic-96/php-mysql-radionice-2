@@ -7,8 +7,8 @@
 
     <?php require ('partials/navbar.view.php') ?>
     <section class="container p-4">
-        <h1>Početna</h1>
-        <hr>
+        <?php require ('partials/entry.view.php') ?>
+
         <h2>Svi filmovi</h2>
         <ul class="list-group">
             <?php foreach ($movies as $movie) : ?>

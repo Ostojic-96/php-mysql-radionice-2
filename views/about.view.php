@@ -8,8 +8,8 @@
     <?php require ('partials/navbar.view.php') ?>
 
     <section class="container p-4">
-        <h1>O nama</h1>
-        <hr>
+        <?php require ('partials/entry.view.php') ?>
+
         <p>Stranica o nama</p>
     </section>
 </main>
