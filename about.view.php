@@ -40,7 +40,7 @@
         </div>
     </header>
     <section class="container p-4">
-        <h1>Početna</h1>
+        <h1>O nama</h1>
         <hr>
         <h2>Svi filmovi</h2>
         <ul class="list-group">
