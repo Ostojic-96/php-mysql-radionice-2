@@ -27,4 +27,5 @@ foreach ($movies as $movie) {
 
 $pageTitle = 'Početna stranica';
 
+require "functions.php";
 require "views/index.view.php";
