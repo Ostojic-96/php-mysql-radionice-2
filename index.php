@@ -1,31 +1,13 @@
 <?php
-$movies = [
-    [
-        'name' => 'Sam u kuci',
-        'year' => 2000,
-        'url' => 'https://example.com'
-    ],
-    [
-        'name' => 'LOTR',
-        'year' => 2010,
-        'url' => 'https://example.com'
 
-    ],
-    [
-        'name' => 'Avatar 2',
-        'year' => 2020,
-        'url' => 'https://example.com'
-    ]
-];
+require 'functions.php';
 
-$newMovies = [];
-foreach ($movies as $movie) {
-    if ($movie['year'] >= 2020) {
-        array_push($newMovies, $movie);
-    }
+$uri = $_SERVER['REQUEST_URI'];
+
+if ($uri == '/') {
+    require 'controllers/index.php';
+} else if ($uri == '/about') {
+    require 'controllers/about.php';
+} else if ($uri == '/contact') {
+    require 'controllers/contact.php';
 }
-
-$pageTitle = 'Početna stranica';
-
-require "functions.php";
-require "views/index.view.php";
