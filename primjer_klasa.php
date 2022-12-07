@@ -3,9 +3,16 @@
 class User
 {
     public $name = 'Ivan';
-    public $age = 12;
+    public $age;
     protected $password = 'lozinka';
-    private $jmbg = '12349874462134';
+    private $jmbg;
+
+    public function __construct(string $name, int $age, string $jmbg)
+    {
+        $this->name = $name;
+        $this->age = $age;
+        $this->jmbg = $jmbg;
+    }
 
     private function isValidJmbg()
     {
@@ -41,8 +48,8 @@ class Admin extends User
     }
 }
 
-$Ivan = new User();
-$admin = new Admin();
+$Ivan = new User('Ivan', 13, '1234567899123');
+$admin = new Admin('Administrator', 23, '9987667876521');
 echo $Ivan->name;
 echo "<br>";
 echo $Ivan->getJmbg();
