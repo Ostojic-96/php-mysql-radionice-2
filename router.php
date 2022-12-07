@@ -17,11 +17,11 @@ function routeToController($uri, $routes)
     }
 }
 
-function abort($code = 404)
+function abort()
 {
-    http_response_code($code);
+    http_response_code(404);
 
-    require "views/{$code}.php";
+    require "views/not_found.php";
 
     die();
 }
