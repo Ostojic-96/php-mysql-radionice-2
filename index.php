@@ -2,6 +2,13 @@
 
 require 'functions.php';
 require 'router.php';
+require 'Database.php';
+
+$db = new Database();
+
+$movies = $db->query('select * from movies')->fetchAll(PDO::FETCH_ASSOC);
+//dd($movies);
+
 
 // Data source name
 //$dsn = 'mysql:host=localhost;dbname=moviedb';
